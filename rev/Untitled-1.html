@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دبلوم الذكاء الاصطناعي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {background-image: 
+    linear-gradient(rgba(36, 36, 193, 0.4), rgba(33, 33, 33, 0.4)),
+    url("ff9a00a4d212ff891e8a47d7c9af44fe.jpg");
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a202c;
+        }
+        .container {
+            max-width: 1024px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .fixed-logo {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            z-index: 50;
+            transition: transform 0.3s ease;
+        }
+        .fixed-logo:hover {
+            transform: scale(1.05);
+        }
+        .logo-image {
+            width: 100%;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+        
+        .hero-bg {
+           background-image: 
+    linear-gradient(rgba(180, 20, 20, 0.4), rgba(33, 33, 33, 0.4)),
+    url("download (4).jpeg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(135deg, rgba(30, 54, 109, 0.8) 0%, rgba(79, 70, 229, 0.8) 100%);
+            border-radius: 1.5rem;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        .accordion-header {
+            cursor: pointer;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .accordion-content.open {
+            max-height: 500px;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .icon {
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 flex items-center justify-center min-h-screen">
+     <div class="fixed-logo">
+        <a href="#">
+            <img src="hqdq.png" alt="شعار الدبلوم" class="logo-image">
+        </a>
+    </div>
+
+
+    <div class="container mx-auto space-y-12">
+        <!-- Hero Section -->
+        <header class="p-8 sm:p-12 card hero-bg text-white text-center">
+            <div class="hero-content">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-2">دبلوم الذكاء الاصطناعي</h1>
+                <h2 class="text-xl sm:text-2xl font-semibold mb-6">ودوره في ريادة الأعمال</h2>
+                <p class="text-lg sm:text-xl max-w-2xl mx-auto opacity-90">
+                    مؤهل مهني معتمد يدعم مسيرتك المهنية ويجعلك تنافس بقوة في سوق العمل الداخلي والخارجي.
+                </p>
+            </div>
+        </header>
+
+        <!-- Course Benefits Section -->
+        <section class="p-8 sm:p-10 card">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-gray-800">أهمية هذا الدبلوم</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-gray-50 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-600 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <p class="font-bold text-lg">دعم مسيرتك المهنية والوظيفية</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-600 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                    </svg>
+                    <p class="font-bold text-lg">المنافسة بقوة على الوظائف</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-600 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13m-6 3l-6-3m-6-3V7.153a4.5 4.5 0 011.163-3.218A4.5 4.5 0 0110.5 3h.534a4.5 4.5 0 013.219 1.163A4.5 4.5 0 0115 7.153V19"></path>
+                    </svg>
+                    <p class="font-bold text-lg">اكتساب أهم المهارات والمعارف</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-600 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.015 12.015 0 002.932 12c0 1.259.336 2.476.953 3.568A12.025 12.025 0 0012 20.069c1.264-.32 2.449-.893 3.568-1.748L19.068 15.068A12.025 12.025 0 0021.068 12c0-1.259-.336-2.476-.953-3.568z"></path>
+                    </svg>
+                    <p class="font-bold text-lg">تقوية سيرتك الذاتية بشهادة دولية</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructor Section -->
+        <section class="p-8 sm:p-10 card">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-gray-800">مقدم الدبلوم</h3>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 md:space-x-reverse">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-indigo-600 p-1 bg-white">
+                     <img src="https://placehold.co/128x128/e0e7ff/1e3a8a?text=Dr" alt="صورة د. محمد سليمان حمزه" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xl sm:text-2xl font-bold mb-2">د. محمد سليمان حمزه</p>
+                    <p class="text-md sm:text-lg text-gray-700">مستشار وخبير تنمية الموارد البشرية</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600 mt-4 text-sm">
+                        <li>عضو المركز العالمي الكندي فانكوفر</li>
+                        <li>عضو البورد الأمريكي - نيويورك</li>
+                        <li>عضو شبكة المستشارين الدولية - دبي</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section (Accordion) -->
+        <section class="p-8 sm:p-10 card">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-gray-800">المنهج الدراسي</h3>
+            <div id="accordion-container" class="space-y-6">
+                <!-- Content will be generated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const curriculum = [
+            {
+                part: "الجزء الأول",
+                title: "أدوات الذكاء الاصطناعي المهمة",
+                description:" يتناول أدوات مهمة في الذكاء الاصطناعي مثل ChatGBT-Open.AI، وCopy.AI، وJasper.AI، وBeautiful.AI، وكيف يخدم الذكاء الاصطناعي رواد الأعمال."
+            },
+            {
+                part: "الجزء الثاني",
+                title: "ريادة الأعمال والتقنيات الجديدة",
+                description: "يغطي كيفية استفادة ريادة الأعمال من التقنيات الجديدة وأبرز استخدامات الذكاء في الشركات الناشئة. كما يتناول المهارات الفعالة التي يحتاجها القادة، مثل الذكاء العاطفي، الرشاقة، الذكاء الثقافي، والتعاطف"
+            },
+            {
+                part: "الجزء الثالث",
+                title: "صعود ريادة الأعمال المدعومة بالذكاء الاصطناعي",
+                description: "يركز على صعود ريادة الأعمال المدعومة بالذكاء، وفهم الذكاء الاصطناعي، ونماذج الأعمال المدعومة به، ودور التعلم الآلي"
+            },
+            {
+                part: "الجزء الرابع",
+                title: "نماذج الأعمال المدعومة بالذكاء الاصطناعي",
+                description: "يستعرض نماذج الأعمال المدعومة بالذكاء الاصطناعي، مثل تبسيط العمليات، تعزيز تجربة العملاء، التسويق والإعلان الشخصي، وتحليل البيانات"
+            },
+            {
+                part: "الجزء الخامس",
+                title: "فوائد استخدام أدوات الذكاء الاصطناعي",
+                description: "يتحدث عن فوائد استخدام أدوات الذكاء الاصطناعي في ريادة الأعمال، مثل توليد الأفكار التجارية، كتابة خطط العمل، وكتابة الرسائل الإلكترونية"
+            },
+            {
+                part: "الجزء السادس",
+                title: "التطبيق العملي",
+                description:"يغطي التطبيق العملي لإعداد التقارير والتحقيقات"
+            },
+            {
+                part: "الجزء السابع",
+                title: "أدوات تطوير برامج الذكاء الاصطناعي",
+                description: "يقدم أفضل 7 أدوات لتطوير برامج الذكاء الاصطناعي، مثل Google Cloud AI وMicrosoft Azure AI"
+            },
+            {
+                part: "الجزء الثامن",
+                title: "جاهزية المؤسسات للذكاء الاصطناعي",
+                description:" يناقش استراتيجيات الجاهزية للذكاء المؤسسي، مثل إنشاء استراتيجية واضحة، بناء أساس قوي للبيانات، وتطبيق التقنيات"
+            },
+            {
+                part: "الجزء التاسع",
+                title: "تحسين أداء الموظفين",
+                description: "يوضح دور الذكاء الاصطناعي في تحسين أداء الموظفين، وفوائده في صنع القرار، الكفاءة التشغيلية، وتحسين تجربة العملاء"
+            },
+            {
+                part: "الجزء العاشر",
+                title: "تأثير الذكاء الاصطناعي على الوظائف والصناعات",
+                description: "يتناول تأثير الذكاء الاصطناعي على الوظائف والصناعات، وتأثيره في مختلف المجالات مثل الصحة، التعليم، والنقل"
+            }
+        ];
+
+        const accordionContainer = document.getElementById('accordion-container');
+
+        curriculum.forEach((item, index) => {
+            const card = document.createElement('div');
+            card.className = 'card p-6 bg-gray-50 mb-4 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl';
+
+            const header = document.createElement('div');
+            header.className = 'accordion-header flex justify-between items-center py-2';
+            header.innerHTML = `
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <span class="bg-indigo-600 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold text-lg">${index + 1}</span>
+                    <h2 class="text-xl font-bold text-gray-800">${item.part}</h2>
+                </div>
+                <svg class="w-6 h-6 transform transition-transform duration-300 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            `;
+
+            const content = document.createElement('div');
+            content.className = 'accordion-content pt-4 border-t border-gray-200 mt-4';
+            content.innerHTML = `
+                <h3 class="text-lg font-bold text-gray-700 mb-2">${item.title}</h3>
+                <p class="text-gray-600">${item.description}</p>
+            `;
+
+            header.addEventListener('click', () => {
+                const svg = header.querySelector('svg');
+                if (content.classList.contains('open')) {
+                    content.classList.remove('open');
+                    svg.classList.remove('rotate-180');
+                } else {
+                    document.querySelectorAll('.accordion-content.open').forEach(openContent => {
+                        openContent.classList.remove('open');
+                        openContent.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+                    });
+                    content.classList.add('open');
+                    svg.classList.add('rotate-180');
+                }
+            });
+
+            card.appendChild(header);
+            card.appendChild(content);
+            accordionContainer.appendChild(card);
+        });
+    </script>
+</body>
+</html>
